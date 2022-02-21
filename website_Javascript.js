@@ -18,3 +18,8 @@ function scrollFunction() {
         document.documentElement.scrollTop = 0;
     }
 }
+
+// javascript to create an alert (
+function alertFunction() {
+    alert("");
+}
