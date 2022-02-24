@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/************************************************************************************/
+/** CSS Webpage Formatting and Styling for Diana Stefanyuk's Website: Hair by Stef **/
+/************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+header {
+    font-family: 'Redressed', cursive;
+    text-align: center;
+}
+
+body {
+    background-color: whitesmoke;
+}
