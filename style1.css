@@ -153,3 +153,16 @@ li a {
 .dropdown3:hover .dropbtn3{
     background-color: whitesmoke;;
 }
+nav.section {
+    margin: 20px 0;
+}
+label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 10px;
+    font-size: 1.25em;
+}
+nav.frm-row colm colm6 input {
+    width: 95%;
+    display: inline-block;
+}
