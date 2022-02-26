@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Booking Form</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" href="css/smart-forms.css">
+    <link rel="stylesheet" href="css/smart-themes/red.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/css/smart-forms.css">
+    <link rel="stylesheet" href="path/to/css/font-awesome.min.css">
+    <script src="booking.js"></script>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header>
+      <h1 class="the head">Hair by Stef</h1>
+    </header>
+<!-- Booking form markup -->
+    <nav class="form">
+      <nav class="forms container">
+        <nav class="form-header">
+          <h1><i class="fa fa-calendar"></i>Make a Schedule</h1>
+        </nav>    
+      </nav>
+    </nav>
+    <script src="booking.js"></script>
+    <nav class="section">
+      <label for="guestname" class="field-label">Please Enter Your Name</label>
+      <label for="guestname" class="field prepend-icon">
+        <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="John Doe/Jane Doe">
+        <span class="field-icon"><i class="fa fa-user"></i></span>  
+    </label>
+  </nav>
+  
+  <nav class="frm-row">
+    <nav class="section colm colm6">
+      <label for="guestemail" class="field-label">Email Address</label>
+      <label for="guestemail" class="field prepend-icon">
+        <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="john@something.com">
+        <span class="field-icon"><i class="fa fa-envelope"></i></span>  
+      </label>
+    </nav>
+    
+    <nav class="section colm colm6">
+      <label for="guestelephone" class="field-label">Telephone / Mobile</label>
+      <label for="guestelephone" class="field prepend-icon">
+        <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="Telephone / Moble Number">
+        <span class="field-icon"><i class="fa fa-phone-square"></i></span>  
+      </label>
+    </nav>
+    <nav class="frm-row">
+      <nav class="section colm colm6">
+        <label for="checkin" class="field-label">Check-in Date</label>
+        <label for="checkin" class="field prepend-icon">
+          <input type="text" id="checkin" name="checkin" class="gui-input" required="" placeholder="mm/dd/yyyy">
+          <span class="field-icon"><i class="fa fa-calendar"></i></span>  
+        </label>
+      </nav>
+    </nav>
+    <nav class="section colm colm6">
+      <label for="checkout" class="field-label">Check-in Hours</label>
+      <label for="checkout" class="field prepend-icon">
+        <input type="text" id="checkout" name="checkout" class="gui-input" required="" placeholder="hours:minutes">
+        <span class="field-icon"><i class="fa fa-calendar"></i></span>  
+      </label>
+    </nav>
+  </nav>
+  
+<!-- Form element will go here-->
+    <form method="post" action="/google.com" id="booking-form">
+      <nav class="form-body">
+  
+      </nav>
+      <nav class="form-footer">
+        <button type="submit" class="button btn-primary">Confirm Booking</button>
+        <button type="reset" class="button">Cancel</button>
+      </nav>
+    </form>   
+    
+  </body>
+</html>
