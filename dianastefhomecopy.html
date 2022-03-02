@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hair By Stef</title>
+  <link rel="stylesheet" type="text/css" href="css/stefpage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/siteicon.jpg">
+  <meta charset="UTF-8">
+
+
+</head>
+
+<body>
+
+<section class = "NoEdit">
+    <br><br><br><br>
+</section>
+
+<header> <!--title-->
+    <br>
+    <img src = "img/Hair by Stef.png" width = "250" height = "250">
+    <h1 class = "headertitle">Hair by Stef</h1>    
+    <p>cuts // color // lashes</p>
+    <br>
+</header>
+
+<section class = "NoEdit">
+    <br><br>
+</section>
+
+<nav class = "navigation"> <!--dropdown menu-->
+
+    <section class="dropdown"> <!--home-->
+            <a href="home.html">Home</a>
+        </section> 
+
+    <section class="dropdown"> <!--services-->
+        <button class="dropbtn">Services
+        </button>
+        <section class="dropdown-content">
+            <a href="pages/hair.html">Hair</a>
+            <a href="pages/lashes.html">Lashes</a>
+        </section>
+    </section>
+
+    <section class="dropdown"> <!--appointments-->
+        <button class="dropbtn">Appointments
+        </button>
+        <section class = "dropdown-content">
+            <a href="https://calendly.com/stefcuts">Book Now</a>
+        </section>
+    </section> 
+
+    <section class="dropdown"> <!--contact-->
+        <button class="dropbtn">Contact</button>
+        <section class="dropdown-content">
+            <a href="https://www.instagram.com/stefcutss">Instagram</a>
+            <a href="#">Phone</a>
+            <a href="#">Email</a>
+        </section> 
+    </section>
+
+</nav> 
+
+<section class = "NoEdit">
+    <br><br><br><br>
+</section>
+
+<section>
+    <h2>Hey there! I'm so happy you're here!</h2>
+</section>
+
+<section class = "NoEdit">
+    <br><br><br><br>
+</section>
+
+<section id = "gallerydisplay"> <!--gallery-->
+    <section class = "row">
+        <section class = "column">
+            <img src = "img/new gallery img/gallery1.png" width = "420" height = "600">
+        </section>
+        <section class = "column">
+            <img src = "img/new gallery img/gallery2.png" width = "420" height = "600">
+        </section>
+        <section class = "column">
+            <img src = "img/new gallery img/gallery3.png" width = "420" height = "600">
+        </section>
+   </section>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <q>Life is too short to have boring hair.</q>
+</div>
+
+<div class="mySlides">
+  <q>Eat, Sleep, Do Hair, Repeat.</q>
+</div>
+
+<div class="mySlides">
+  <q>Do not waste a good hair day.</q>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<nav class="footer">
+            <p>Find me on social media.</p>
+            <a href="https://www.instagram.com/stefcutss/" class="fa fa-instagram"></a>
+                
+        </nav>
+
+</body>
+</html>
