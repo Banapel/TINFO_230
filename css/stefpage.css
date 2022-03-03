@@ -29,8 +29,22 @@ body {
     font-family: 'Gideon Roman', cursive;
 }
 
-img {
+.aboutme p {
+    font-family: 'Gideon Roman', cursive;
+    font-size: 24px;
+}
+
+.hairservices p  {
+    font-family: 'Gideon Roman', cursive;
+}
+
+.gallerypic {
     border: 1px solid black;
+}
+
+.contactinfo p {
+    font-family: 'Gideon Roman',cursive;
+    font-size: 18px;
 }
 
 .imgborder {
@@ -147,7 +161,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  background: #9CAF88;
+  background: #67695b;
 }
 
 /* Slides */
@@ -217,7 +231,11 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 /* Add an italic font style to all quotes */
-q {font-style: italic;}
+q {
+    font-style: italic;
+    font-family: 'Gideon Roman',cursive;
+    font-size: 24px;
+}
 
 /* instagram logo and link */
 .fa {
@@ -232,4 +250,67 @@ q {font-style: italic;}
 
 .fa:hover {
     opacity: 0.7;
+}
+
+/*down arrows links to each section*/
+.downArrow{
+	position: relative;
+	bottom: 50%;
+	left: 0%;
+}
+.bounce {
+	-moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+.downArrow:hover {
+  opacity: .5;
 }
