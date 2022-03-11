@@ -31,3 +31,48 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
   appearOnScroll.observe(slider);
 });
+
+// text slideshow
+var quotes = new Array();
+
+quotes[0] = "Life is too short to have boring hair";
+quotes[1] = "Eat, Sleep, Do Hair, Repeat";
+quotes[2] = "Do not waste a good hair day";
+console.log(quotes);
+var counter = 0;
+
+function loop() {
+    if (counter > 2) counter = 0;
+    document.getElementById('textslide').firstElementChild.innerHTML = quotes[counter];
+    counter++;
+    console.log(counter);
+    setTimeout(loop, 3000);
+}
+loop();
+
+var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
