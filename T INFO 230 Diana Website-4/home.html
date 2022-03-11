@@ -7,7 +7,6 @@
   
   <link rel="icon" href="images/Hair by Stef.png">
   <meta charset="UTF-8">
-  <script type="text/javascript" src="js/javascript.js"></script>
 
 
 </head>
@@ -97,12 +96,12 @@
 <!-- Quotes Slideshow -->
 <section class="slideshow-container fade-in">
 
-<section class="mySlides">
-  <q>Life is too short to have boring hair.</q>
+<section id = "textslide" class="mySlides">
+  <q></q>
 </section>
 
-<section class="mySlides">
-  <q>Eat, Sleep, Do Hair, Repeat.</q>
+<section id = "textslide" class="mySlides">
+  <q id="textslide">Eat, Sleep, Do Hair, Repeat.</q>
 </section>
 
 <section class="mySlides">
@@ -139,36 +138,6 @@
 
 <br><br><br><br><br><br><br><br><br><br><br><br>
 
-<!--text slides javascript-->
-<!--do not edit-->
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-    showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-    showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    }
-</script>
 
 </body>
 </html>
